@@ -1,0 +1,8 @@
+# Arquivos de banco de dados
+*.db
+
+# Arquivos de cache do Python
+__pycache__/
+
+# Planilhas
+*.ods

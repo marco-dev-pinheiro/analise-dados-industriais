@@ -1,95 +1,82 @@
-# projeto  Dashboard de Analise Industrial 
+📊 Análise de Dados Industriais com Python
 
-# Projeto de Análise Industrial
+🔍 Projeto de análise exploratória de métricas de desempenho de máquinas, com foco em identificar padrões de falhas e otimizar a produção.
 
-Este é um projeto de análise de dados industriais, focado em entender a relação entre o tempo de operação, falhas e a produção de máquinas. A análise é dividida em etapas, começando pela preparação do ambiente e do dataset.
+Este repositório demonstra meu processo de trabalho em Ciência de Dados aplicada ao contexto industrial, desde a preparação dos dados até a geração de insights e visualizações.
 
-## Sumário
-1. [Objetivo do Projeto](#objetivo-do-projeto)
-2. [Estrutura do Projeto](#estrutura-do-projeto)
-3. [Dia 1: Preparação do Ambiente e Dataset](#dia-1-preparacao-do-ambiente-e-dataset)
-    - [Pré-requisitos](#pré-requisitos)
-    - [Dataset](#dataset)
-    - [Processo Executado](#processo-executado)
-4. [Próximos Passos](#próximos-passos)
+🎯 Objetivos do Projeto
 
-================================================================
-### 1. Objetivo do Projeto
+Identificar e Correlacionar Variáveis → entender a relação entre horas trabalhadas, número de falhas e volume de produção.
 
-O objetivo principal é realizar uma análise de dados sobre a operação de máquinas em um ambiente industrial. Usando Python e bibliotecas como Pandas, Matplotlib e Seaborn, exploraremos um dataset fictício para identificar padrões, correlacionar variáveis (horas trabalhadas, falhas, produção) e criar visualizações para extrair insights valiosos.
-=========================================================================
-### 2. Estrutura do Projeto
+Prever Falhas → analisar padrões de falhas para antecipar problemas e reduzir custos de manutenção.
 
-A estrutura de arquivos atual do projeto é a seguinte:
+Otimizar a Produção → criar visualizações que auxiliam decisões estratégicas e aumentam eficiência operacional.
+
+🛠️ Tecnologias e Metodologia
+
+Linguagem: Python 🐍
+
+Análise e Manipulação de Dados: Pandas
+
+Banco de Dados: SQLite + sqlite3
+
+Visualização de Dados: Matplotlib & Seaborn
+
+Versionamento: Git & GitHub
+
+📌 Metodologia → fluxo completo de análise de dados: ingestão → tratamento → análise → visualização → insights.
+
+📂 Estrutura do Projeto
 .
-├─  conceitos            # Conceitos técnicos importantes para entender/ ler-analisar/construir/
-├── producao.ods         # Planilha de dados brutos (LibreOffice Calc)
-├── producao.db          # Banco de dados SQLite com os dados carregados
-└── analise.py  
-      # Script Python para carregar e processar o dataset
-============================================================================
-### 3.  Preparação do Ambiente e Dataset
+├── producao.db      # Banco de dados SQLite com dados brutos
+├── producao.ods     # Dataset original em planilha
+├── producao.py      # Script para criar e popular a tabela
+└── analise.py       # Script principal com análise e gráficos
 
-A primeira etapa do projeto foi focada em garantir que o ambiente estivesse pronto e que o dataset fosse criado, limpo e carregável.
+📈 Análises e Insights
 
-#### Pré-requisitos
-Para executar o script, é necessário ter o Python instalado. As seguintes bibliotecas precisam ser instaladas:
+Preparação e Limpeza de Dados → tratamento de valores ausentes e padronização.
 
-```bash
-pip install pandas matplotlib seaborn sqlalchemy psycopg2
+Estatísticas Descritivas → contagem de falhas, médias de produção por máquina, agrupamentos.
 
---pandas: Para manipulação e análise de dados.
+Visualizações Criadas:
 
---matplotlib e seaborn: Para visualização de dados.
+📊 Total de falhas por máquina → identificar equipamentos críticos.
 
---sqlalchemy: Para trabalhar com o banco de dados.
+📈 Produção ao longo do tempo → acompanhar evolução e desempenho.
 
-psycopg2: (Opcional) Biblioteca para PostgreSQL, embora no momento o projeto utilize SQLite.
-==========================================================================
-Dataset
-O dataset fictício foi criado com as seguintes colunas:usei o libreoffice
+🚀 Próximos Passos
 
-Maquina: Identificador da máquina (ex: 'A1', 'B2', etc.).
+🔮 Análise Preditiva → aplicar Machine Learning para prever falhas.
 
-Data: Data da operação.
+📊 Dashboard Interativo → desenvolver visualização dinâmica com Plotly/Streamlit.
 
-Horas_trabalhadas: Horas de funcionamento da máquina naquele dia.
+⚙️ Automação → criar pipeline para atualização contínua dos dados.
 
-Falhas: Número de falhas reportadas.
+▶️ Como Usar
 
-Producao: Unidades produzidas pela máquina.
+Clone o repositório:
+git clone https://https://github.com/marco-dev-pinheiro/analise-dados-industriais
 
-O dataset foi inicialmente criado em uma planilha (producao.ods) e, em seguida, carregado em um banco de dados SQLite (producao.db) para facilitar a manipulação.
+Instale as dependências:
 
-Processo Executado
-O script dahanalise.py foi responsável por:
+pip install pandas matplotlib seaborn sqlalchemy
 
-Conectar-se a um banco de dados SQLite.
+Crie o banco de dados:
+python producao.py
 
-Criar uma tabela chamada producao_maquinas com a estrutura definida.
+Rode a análise e gere os gráficos:
+python analise.py
 
-Inserir os dados da planilha na tabela, utilizando um método de inserção em lote (executemany) para maior eficiência.
+💡 Por que este projeto é relevante?
 
-Exibir as primeiras linhas da tabela no terminal para confirmar que o carregamento foi bem-sucedido.
-=================================================================
-#####Agora carregando o arquivo para um DataFrame do Pandas 
-[v] Carregar os dados do banco de dados para um DataFrame do Pandas.
+Este projeto mostra como dados industriais podem gerar valor real:
 
-[v] Realizar uma análise exploratória dos dados (.info(), .describe()).
-   Realizamos uma analise exploratória  
+Redução de custos com manutenção preditiva.
 
-[v] Criar visualizações básicas para entender a distribuição das variáveis e a correlação entre elas (ex: gráficos de dispersão, histogramas).
+Aumento da eficiência produtiva.
 
-######## Próximos passos 
-[]Limpeza e tratamento
+Suporte a decisões estratégicas baseadas em dados.
 
-[]Identificar e corrigir:
 
-[]Valores nulos.
-
-[]Tipos errados (df['Data'] = pd.to_datetime(df['Data'])).
-
-[]Colunas desnecessárias.
-
-[]Criar novas métricas se precisar, ex: Falhas_por_hora = Falhas / Horas_trabalhadas.
 

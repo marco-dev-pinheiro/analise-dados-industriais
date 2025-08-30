@@ -14,9 +14,10 @@ cur = con.cursor()
 try:
 
     df = pd.read_excel('producao.ods' , engine='odf')
-    # Converte todos os nomes de colunas para minúsculas
+   
     df.columns = df.columns.str.lower()
-    df['data'] = df['data'].dt.strftime('%Y-%m-%d') #formatando a data para o formato dia-mes-ano
+    df['data'] = pd.to_datetime(df['data'], format='%Y-%m-%d')
+    df['data'] = df['data'].dt.strftime('%Y-%m-%d')
 
     print("Dados lidos com sucesso do arquivo 'producao.ods'.")
 except FileNotFoundError:

@@ -61,7 +61,7 @@ O objetivo é demonstrar como **dados industriais** podem ser gerados, tratados,
 └── README.md                 # Documentação
 
 #    Fluxo de Dados (ETL → Análise → Dashboard)
-
+```mermaid
 flowchart LR
     A[📄 generate_data.py] -->
     A --> B[🛠️ producao.py (ETL)]

@@ -55,7 +55,7 @@ O objetivo é demonstrar como **dados industriais** podem ser gerados, tratados,
 │
 ├── 📂 reports
 │   ├── img/                  # Imagens e gráficos para o README
-│   │   └── <!-- adicione aqui -->
+│   │   
 │
 ├── requirements.txt          # Dependências do projeto
 └── README.md                 # Documentação
@@ -110,12 +110,15 @@ streamlit run src/app_streamlit.py
 
 ## 📸 Demonstração
 
+## 📸 Demonstração
+
 ![Dashboard](reports/img/dashboard.png)
 ![Gráfico de Produção](reports/img/producao.png)
 ![Análise de Falhas](reports/img/falhas.png)
 ![Produção Mensal](reports/img/mensalproducao.png)
-![Tabela de resumo](reports/img/tabelaresumo.png)
-![Previsão de produção](reports/img/previsao.png)
+![Tabela de Resumo](reports/img/tabelaresumo.png)
+![Previsão de Produção](reports/img/previsao.png)
+
 
 
 

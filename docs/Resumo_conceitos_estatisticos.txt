@@ -1,0 +1,13 @@
+Resumo de conceitos estatisticos 
+
+COUNT = A quantidade de valores de uma coluna 
+
+MEAN  = A media aritimetica dos valores .
+
+STD =  O desvio Padrão . (Mede a dispersão dos dados. Um std alto indica que os dados estão muito espalhados.
+
+MIn = O valor minimo
+
+MAX  = O valor maximo
+
+25% - 50%  - 100% = Os quartis. Dividem os dados em 4 partes iguais. O 50% é a mediana, o valor do meio.(Permitem entender a distribuição dos dados e identificar anomalias sem o impacto de valores extremos (min/max).)

@@ -1,0 +1,25 @@
+1. Gráfico de Dispersão (Scatter Plot):
+O que é:
+Um gráfico de dispersão exibe a relação entre duas variáveis numéricas. Cada ponto no gráfico representa um par de valores, onde a posição do ponto é determinada pelos valores dessas variáveis nos eixos x e y.
+Visualmente:
+Imagine um gráfico com dois eixos: horizontal (x) e vertical (y). Cada ponto é marcado com suas coordenadas x e y, como se fossem as coordenadas de um mapa.
+O que revela:
+Correlação: Se os pontos tendem a formar um padrão (por exemplo, uma linha ascendente ou descendente), isso indica uma correlação entre as variáveis.
+Padrões: Permite identificar padrões, tendências e outliers (valores atípicos).
+Exemplo: Um gráfico de dispersão pode mostrar se o aumento da idade (eixo x) está relacionado ao tempo de internação hospitalar (eixo y),
+
+
+=================================================================
+2. Histograma:
+O que é:
+Um histograma mostra a distribuição de frequência de uma única variável numérica. Ele agrupa os dados em intervalos (bins) e mostra a frequência com que cada intervalo ocorre. 
+Visualmente:
+O histograma é parecido com um gráfico de barras, mas as barras (intervalos) são adjacentes, sem espaço entre elas. 
+O que revela:
+Forma da Distribuição: Revela a forma da distribuição dos dados (normal, uniforme, etc.). 
+Tendência Central: Indica onde os dados se concentram (média, mediana). 
+Dispersão: Mostra como os dados estão espalhados em torno da tendência central. 
+Exemplo:
+Um histograma pode mostrar a distribuição das alturas de uma população, revelando se a maioria das pessoas tem alturas semelhantes ou se há uma grande variação. 
+
+

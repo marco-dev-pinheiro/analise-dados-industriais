@@ -71,7 +71,7 @@ flowchart LR
 
 
 
-
+```mermaid
 ## Instalação
 
 # ▶️ Como Executar o Projeto
@@ -98,7 +98,7 @@ streamlit run src/app_streamlit.py
 
 
 
-
+```mermaid
 ###🚀 Próximos Passos
 
 [] Exportação de relatórios automáticos em PDF/Excel
@@ -108,8 +108,8 @@ streamlit run src/app_streamlit.py
 [] Integração com dados em tempo real
 ## Autores
 
-## 📸 Demonstração
 
+```mermaid
 ## 📸 Demonstração
 
 ![Dashboard](reports/img/dashboard.png)
@@ -122,7 +122,7 @@ streamlit run src/app_streamlit.py
 
 
 
-
+```mermaid
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marco-pinheiro-34256b373/)
 
 

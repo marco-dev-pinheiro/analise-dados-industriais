@@ -55,13 +55,13 @@ O objetivo é demonstrar como **dados industriais** podem ser gerados, tratados,
 │
 ├── 📂 reports
 │   ├── img/                  # Imagens e gráficos para o README
-│   │   └── <!-- adicione aqui -->
+│   │   
 │
 ├── requirements.txt          # Dependências do projeto
 └── README.md                 # Documentação
 
 #    Fluxo de Dados (ETL → Análise → Dashboard)
-
+```mermaid
 flowchart LR
     A[📄 generate_data.py] -->
     A --> B[🛠️ producao.py (ETL)]
@@ -71,7 +71,7 @@ flowchart LR
 
 
 
-
+```mermaid
 ## Instalação
 
 # ▶️ Como Executar o Projeto
@@ -98,7 +98,7 @@ streamlit run src/app_streamlit.py
 
 
 
-
+```mermaid
 ###🚀 Próximos Passos
 
 [] Exportação de relatórios automáticos em PDF/Excel
@@ -108,18 +108,21 @@ streamlit run src/app_streamlit.py
 [] Integração com dados em tempo real
 ## Autores
 
+
+```mermaid
 ## 📸 Demonstração
 
 ![Dashboard](reports/img/dashboard.png)
 ![Gráfico de Produção](reports/img/producao.png)
 ![Análise de Falhas](reports/img/falhas.png)
 ![Produção Mensal](reports/img/mensalproducao.png)
-![Tabela de resumo](reports/img/tabelaresumo.png)
-![Previsão de produção](reports/img/previsao.png)
+![Tabela de Resumo](reports/img/tabelaresumo.png)
+![Previsão de Produção](reports/img/previsao.png)
 
 
 
 
+```mermaid
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marco-pinheiro-34256b373/)
 
 
